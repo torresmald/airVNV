@@ -1,16 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AirVNV</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300,400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="build/css/app.css">
-</head>
-<body>
-
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300,400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="build/css/app.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="barra contenedor">
+        <div class="barra__logo">
+          <p class="barra__nombre">Viaje</p>
+        </div>
+        <nav class="barra__navegacion">
+          <a href="#" class="barra__link">Lugares</a>
+          <a href="#" class="barra__link">Experiencias</a>
+          <a href="#" class="barra__link"> Experiencias en Línea</a>
+        </nav>
+        <nav class="barra__login">
+            <a href="#" class="barra__link">Hazte anfitrion</a>
+        </nav>
+      </div>
+      <form action="" class="formulario contenedor">
+        <div class="formulario__campo">
+            <label for="ubicacion" class="formulario__label">Ubicacion</label>
+            <input type="text" id="ubicacion" class="formulario__label" placeholder="¿A donde viajas?">
+        </div>
+        <div class="formulario__campo">
+            <label for="llegada" class="formulario__label">Llegada</label>
+            <input type="date" id="llegada" class="formulario__label">
+        </div>
+        <div class="formulario__campo">
+            <label for="salida" class="formulario__label">Salida</label>
+            <input type="date" id="salida" class="formulario__label">
+        </div>
+        <div class="formulario__campo">
+            <label for="ubicacion" class="formulario__label">Ubicacion</label>
+            <input type="text" id="ubicacion" class="formulario__label" placeholder="¿A donde viajas?">
+        </div>
+        <div class="formulario__campo">
+            <label for="huespedes" class="formulario__label">Huespedes</label>
+            <input type="number" min="1" max="10" id="huespedes" class="formulario__label" placeholder="Nº huespedes">
+        </div>
+        <div class="formulario__campo">
+            <input type="submit" class="formulario__submit" value="Enviar">
+        </div>
+      </form>
+      <div class="header__busqueda contenedor">
+        <p class="header__busqueda-label">¿No sabes a donde ir?</p>
+        <a href="#" class="header__busqueda-boton">Busqueda Flexible</a>
+      </div>
+    </header>
+  </body>
 </html>
