@@ -1,0 +1,16 @@
+@use "base/mixins" as m;
+@use "base/variables" as v;
+
+.experiencias{
+    padding: 5rem 0;
+
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+        @include m.scroll;
+        @include m.tablet { 
+            justify-content: center;
+        }
+    }
+}

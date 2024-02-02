@@ -1,0 +1,28 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.vivir {
+  padding: 5rem 0;
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 30rem);
+    column-gap: 2rem;
+    @include m.scroll;
+    @include m.tablet {
+      grid-template-columns: repeat(2, 2fr);
+    }
+    @include m.desktop {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__imagen {
+    img {
+      border-radius: 2rem;
+    }
+  }
+}

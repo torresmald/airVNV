@@ -1,0 +1,65 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.anfitrion {
+  padding: 5rem 0;
+  &__contenido {
+    border-radius: 2rem;
+    color: v.$blanco;
+    display: grid;
+    padding: 5rem;
+    row-gap: 15rem;
+    grid-template-rows: repeat(2, 1fr);
+    background-image: linear-gradient(
+        to bottom,
+        v.$negro 0%,
+        v.$negro 50%,
+        transparent 50%
+      ),
+      url("../img/anfitrion.jpg");
+    background-repeat: no-repeat;
+    background-position: center, center bottom;
+    background-size: 100%, 60rem;
+    @include m.telefono {
+      background-size: 100%, 70rem;
+      background-position: center, center 200%;
+    }
+    @include m.tablet {
+      grid-template-rows: unset;
+      background-image: linear-gradient(
+          to right,
+          v.$negro 0%,
+          v.$negro 45%,
+          transparent 55%
+        ),
+        url("../img/anfitrion.jpg");
+      background-size: 100%, auto;
+      background-position: center, 50% 30%;
+      padding: 15rem 5rem;
+    }
+    @include m.desktop { 
+      background-position: center, 100% 30%;
+      
+    }
+  }
+  &__informacion {
+    @include m.tablet {
+      max-width: 40%;
+    }
+  }
+  &__subtitle {
+    font-weight: 700;
+    font-size: 3rem;
+  }
+  &__texto {
+    color: v.$blanco;
+  }
+  &__boton {
+    color: v.$negro;
+    background-color: v.$blanco;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 1rem;
+    font-weight: 700;
+  }
+}

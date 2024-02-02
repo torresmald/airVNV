@@ -1,0 +1,41 @@
+@use "base/mixins" as m;
+@use "base/variables" as v;
+
+.destinos {
+  padding: 5rem 0;
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+  &__grid {
+    @include m.tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    @include m.desktop {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  &__destino {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+  &__imagen {
+    width: 15rem;
+    @include m.tablet {
+      width: 100%;
+    }
+  }
+  &__subtitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  &__text {
+    margin: 0;
+  }
+}

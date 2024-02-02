@@ -17,10 +17,10 @@
     &-boton {
       @include m.boton(v.$blanco, v.$primario);
     }
-    &-boton:hover{
-        background-color: v.$primario;
-        color: v.$blanco;
-        transition: all ease-in 300ms;
+    &-boton:hover {
+      background-color: v.$primario;
+      color: v.$blanco;
+      transition: all ease-in 300ms;
     }
   }
 }
