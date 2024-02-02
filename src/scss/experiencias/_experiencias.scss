@@ -13,4 +13,13 @@
             justify-content: center;
         }
     }
+
+    &__texto{
+        p{
+            font-size: 1.3rem;
+            @include m.tablet { 
+                font-size: 1.6rem;
+            }
+        }
+    }
 }
